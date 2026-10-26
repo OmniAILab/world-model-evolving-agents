@@ -1,0 +1,7 @@
+Check one precondition against a predicted transition.
+PRECONDITION: {precondition}
+SOURCE STATE: {source}
+ACTION: {action}
+PREDICTED STATE: {target}
+Does attempting the action in the source state, or reaching the predicted state, contradict the precondition?
+Return: YES or NO.

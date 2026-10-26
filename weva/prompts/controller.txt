@@ -1,0 +1,8 @@
+SYSTEM: Select one meta-action from the current state.
+CONTROL STATE: confidence c_t={conf}; contradiction ratio delta_t={delta}; novelty nu_t={novelty}; progress l_t={progress}; model trust mu_t={trust}. All values lie in [0, 1].
+LOOKAHEAD: roll candidate actions forward over the transition model and commit along a consistent branch.
+ACT: proceed under the current abstraction.
+ABSTRACT: re-induce the abstraction over an extended trajectory window.
+RETRIEVE: query memory for structurally compatible experience.
+ROLLBACK: restore the last consistent internal abstraction and reasoning context.
+Answer with one token: LOOKAHEAD, ACT, ABSTRACT, RETRIEVE, or ROLLBACK.

@@ -1,0 +1,8 @@
+Predict the state that would follow the candidate action, keeping symbolic elements and natural language side by side.
+CURRENT STATE
+V: {variables}
+C: {constraints}
+E: {outcomes}
+CANDIDATE ACTION: {action}
+Return the state after the action, using the same fields and the same vocabulary. Change only what the action changes. Mark any active precondition violated by attempting the action in the current state or by reaching the predicted successor. Do not execute the action and do not describe the reasoning.
+Return: V:, C:, E:, VIOLATED:.

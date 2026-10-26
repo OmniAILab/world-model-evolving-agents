@@ -1,0 +1,10 @@
+grpo: {group_size: 8, lr: 1.0e-6, kl_coef: 0.001, clip_eps: 0.2}
+rounds: 3
+perceptor_reward: {task: 1.0, structural_consistency: 1.0, novelty: 1.0, predictability: 1.0}
+confidence_gate: 0.6
+train_world_model: true
+world_model_lr: 1.0e-6
+world_model_epochs: 1
+backend: {lora_rank: 16, lora_alpha: 32, ppo_epochs: 1, sample_temperature: 0.9, max_new_tokens: 256}
+split: train
+output_dir: outputs/phase2

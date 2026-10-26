@@ -1,0 +1,2 @@
+env: webshop
+kwargs: {num_products: 1000}

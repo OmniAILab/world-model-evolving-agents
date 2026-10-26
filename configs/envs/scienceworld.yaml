@@ -1,0 +1,2 @@
+env: scienceworld
+kwargs: {max_variations: 5, simplification: easy}

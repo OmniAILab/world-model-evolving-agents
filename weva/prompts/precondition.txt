@@ -1,0 +1,7 @@
+A predicted state disagreed with the realised state.
+ACTION: {action}
+PREDICTED STATE: {predicted}
+REALISED STATE: {realised}
+SIMILAR TRANSITIONS: {similar}
+State one precondition that, if active, would have predicted the realised state. Use the vocabulary of the state fields.
+Return: PRECONDITION:.

@@ -1,0 +1,3 @@
+_base_: ../phase2.yaml
+perceptor_reward: {predictability: 0.0}
+output_dir: outputs/phase2_no_reciprocal_perceptor

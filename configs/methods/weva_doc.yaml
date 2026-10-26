@@ -1,0 +1,3 @@
+weights: frozen
+llm: {backend: litellm, model: gemini/gemini-3.5-flash, min_output_tokens: 4096, logprobs: false, extra: {num_retries: 3}}
+controller: {type: llm}

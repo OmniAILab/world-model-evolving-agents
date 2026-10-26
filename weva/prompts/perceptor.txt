@@ -1,0 +1,10 @@
+Induce the current state, keeping symbolic elements and natural language side by side.
+GOAL: {goal}
+OBSERVATION: {observation}
+RECENT INTERACTION: {window}
+ACTIVE PRECONDITIONS: {preconditions}
+Keep only what governs how the interaction may change.
+V: entities, tools, and their current states.
+C: preconditions that hold and constrain the next actions.
+E: progress towards the goal and observed outcomes.
+Return: V:, C:, E:.

@@ -1,0 +1,3 @@
+weights: trainable
+llm: {backend: torch, model: Qwen/Qwen3.5-9B, adapters: outputs/phase2/adapters}
+controller: {type: learned, weights_path: outputs/controller.json}

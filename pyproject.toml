@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weva"
+version = "0.1.0"
+description = "World-Model Evolving Agents (WEvA): learn what is predictive, verify consequences before acting."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Leonardo Ranaldi" }]
+dependencies = ["numpy>=1.24", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+llm = ["litellm>=1.40"]
+scienceworld = ["scienceworld>=1.2"]
+alfworld = ["alfworld>=0.4"]
+appworld = ["appworld>=0.1.3"]
+train = ["torch>=2.2", "transformers>=4.45", "peft>=0.11"]
+dev = ["pytest>=8", "ruff>=0.5", "matplotlib>=3.8"]
+all = ["weva[llm,train,dev]"]
+
+[project.scripts]
+weva = "weva.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["weva*"]
+
+[tool.setuptools.package-data]
+weva = ["prompts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110

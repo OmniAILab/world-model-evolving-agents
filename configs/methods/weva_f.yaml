@@ -1,0 +1,3 @@
+memory: {levels: [episodic]}
+correction: {enabled: false}
+run: {freeze_memory: true}

@@ -1,0 +1,3 @@
+_base_: ../phase2.yaml
+train_world_model: false
+output_dir: outputs/phase2_no_transition_learning

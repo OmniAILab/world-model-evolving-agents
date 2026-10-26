@@ -1,0 +1,5 @@
+Complete the task by acting step by step.
+GOAL: {goal}
+OBSERVATION: {observation}
+HISTORY: {history}
+Return the single next action.

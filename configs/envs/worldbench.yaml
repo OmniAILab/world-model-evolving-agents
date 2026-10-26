@@ -1,0 +1,11 @@
+env: worldbench
+kwargs:
+  root: null
+  benchmark_dir: null
+  languages: [DE, EN-UK, EN-US, ES, FR, IT, PT, ZH]
+  personas: null
+  subtasks: null
+  max_tasks: null
+  max_obs_chars: 0
+  skip_judged: false
+  work_dir: outputs/worldbench

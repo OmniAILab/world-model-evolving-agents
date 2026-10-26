@@ -1,0 +1,9 @@
+method: weva
+weights: frozen
+llm: {backend: toy, actor_temperature: 0.3, actor_top_p: 0.9}
+state: {representation: quasi_symbolic, window: 8}
+lookahead: {horizon: 2, branching: 3, beam: 2, verify: true, verifier: both}
+controller: {type: threshold, trust_gating: true, window: 8}
+memory: {levels: [episodic, semantic, procedural], retrieval_policy: adaptive}
+correction: {enabled: true, field_diagnosis: true, revise_context: true, monitor_on_act: true}
+run: {max_steps: 30, seed: 0, output_dir: outputs}

@@ -1,0 +1,2 @@
+env: alfworld
+kwargs: {step_limit: 50}

@@ -1,0 +1,6 @@
+Propose the next action towards the goal.
+GOAL: {goal}
+CURRENT STATE: V: {variables}; C: {constraints}; E: {outcomes}
+RETRIEVED EXPERIENCE: {memory}
+Propose {B} distinct actions that are admissible in the environment, ranked by expected progress. Do not execute them.
+Return one action per line.
